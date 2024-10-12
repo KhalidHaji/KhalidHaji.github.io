@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Packages</title>
+    <!-- Link to FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style type="text/css">
+       @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  background-color: #dff9fb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plan {
+  background-color: #fff;
+  padding: 2.5rem;
+  margin: 12px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.plan h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.plan .price {
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+
+.plan ul.features {
+  list-style-type: none;
+  text-align: left;
+}
+
+.plan ul.features li {
+  margin: 8px 0;
+}
+
+.plan ul.features .fas {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.plan ul.features .fa-check-circle {
+  color: #6ab04c;
+}
+
+.plan ul.features .fa-times-circle {
+  color: #eb4d4b;
+}
+
+.plan button {
+  border: none;
+  width: 100%;
+  padding: 12px 35px;
+  margin-top: 1rem;
+  background-color: #6ab04c;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.plan.popular {
+  border: 2px solid #6ab04c;
+  position: relative;
+  transform: scale(1.08);
+}
+
+.plan.popular span {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6ab04c;
+  color: #fff;
+  padding: 4px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.plan:hover {
+  box-shadow: 5px 7px 67px -28px rgba(0, 0, 0, 0.37);
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    flex-direction: column;
+  }
+
+  .plan {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <h1>Choose the Best Web Development Plan for Your Needs</h1>
+    <p>
+        Professional web development services tailored to your project. No hidden fees, transparent pricing.
+    </p>
+
+    <div class="pricing">
+        <!-- Basic Plan -->
+        <div class="plan">
+            <h2>Basic</h2>
+            <div class="price">$500</div>
+            <ul class="features">
+                <li><i class="fas fa-check-circle"></i> Up to 5 pages</li>
+                <li><i class="fas fa-check-circle"></i> Responsive design</li>
+                <li><i class="fas fa-check-circle"></i> SEO Optimization</li>
+                <li><i class="fas fa-check-circle"></i> Basic Contact Form</li>
+                <li><i class="fas fa-times-circle"></i> No eCommerce Functionality</li>
+            </ul>
+            <button>Get Started</button>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="plan popular">
+            <span>Most Popular</span>
+            <h2>Standard</h2>
+            <div class="price">$1000</div>
+            <ul class="features">
+                <li><i class="fas fa-check-circle"></i> Up to 10 pages</li>
+                <li><i class="fas fa-check-circle"></i> Responsive design</li>
+                <li><i class="fas fa-check-circle"></i> SEO Optimization</li>
+                <li><i class="fas fa-check-circle"></i> Custom Blog Integration</li>
+                <li><i class="fas fa-check-circle"></i> Google Analytics Setup</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="plan">
+            <h2>Premium</h2>
+            <div class="price">$2000</div>
+            <ul class="features">
+                <li><i class="fas fa-check-circle"></i> Unlimited pages</li>
+                <li><i class="fas fa-check-circle"></i> Responsive design</li>
+                <li><i class="fas fa-check-circle"></i> eCommerce Functionality</li>
+                <li><i class="fas fa-check-circle"></i> Google Analytics Setup</li>
+                <li><i class="fas fa-check-circle"></i> Ongoing Support (3 months)</li>
+            </ul>
+            <button>Contact Us</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+</body>
+</html>
