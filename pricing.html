@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Packages</title>
     <!-- Link to FontAwesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-    <link rel="stylesheet" href="style.css">
+     <meta charset="utf-8">
+    <title>services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Template Google Fonts -->
@@ -40,218 +39,131 @@
 
     <!-- Modernizr JS File -->
     <script src="js/modernizr.custom.js"></script>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <style type="text/css">
-        @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+       @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Source Sans Pro", sans-serif;
-        }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
 
-        body {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 20px; /* Add padding to avoid content touching the screen edges */
-        }
+body {
+  background-color: #dff9fb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-        h1 {
-            text-align: center;
-            margin-top: 2rem;
-            font-size: 2rem; /* Adjusted for better visibility */
-        }
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
 
-        p {
-            text-align: center;
-            margin-bottom: 4rem;
-            font-size: 1rem; /* Adjusted for better visibility */
-        }
+p {
+  text-align: center;
+  margin-bottom: 4rem;
+}
 
-        .pricing {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-        .plan {
-            background-color: #fff;
-            padding: 2.5rem;
-            margin: 12px;
-            border-radius: 5px;
-            text-align: center;
-            transition: 0.3s;
-            cursor: pointer;
-            flex: 1;
-            max-width: 300px;
-        }
+.plan {
+  background-color: #fff;
+  padding: 2.5rem;
+  margin: 12px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
 
-        .plan h2 {
-            color: black;
-            font-size: 22px;
-            margin-bottom: 12px;
-        }
+.plan h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
 
-        .plan .price {
-            color: black;
-            margin-bottom: 1rem;
-            font-size: 30px;
-        }
+.plan .price {
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
 
-        .plan ul.features {
-            list-style-type: none;
-            text-align: left;
-        }
+.plan ul.features {
+  list-style-type: none;
+  text-align: left;
+}
 
-        .plan ul.features li {
-            color: black;
-            margin: 8px 0;
-        }
+.plan ul.features li {
+  margin: 8px 0;
+}
 
-        .plan ul.features .fas {
-            margin-right: 8px;
-            font-size: 18px;
-        }
+.plan ul.features .fas {
+  margin-right: 8px;
+  font-size: 18px;
+}
 
-        .plan ul.features .fa-check-circle {
-            color: #6ab04c;
-        }
+.plan ul.features .fa-check-circle {
+  color: #6ab04c;
+}
 
-        .plan ul.features .fa-times-circle {
-            color: #eb4d4b;
-        }
+.plan ul.features .fa-times-circle {
+  color: #eb4d4b;
+}
 
-        .plan button {
-            border: none;
-            width: 100%;
-            padding: 12px 35px;
-            margin-top: 1rem;
-            background-color: #6ab04c;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
+.plan button {
+  border: none;
+  width: 100%;
+  padding: 12px 35px;
+  margin-top: 1rem;
+  background-color: #6ab04c;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
 
-        .plan.popular {
-            border: 2px solid #6ab04c;
-            position: relative;
-            transform: scale(1.08);
-        }
+.plan.popular {
+  border: 2px solid #6ab04c;
+  position: relative;
+  transform: scale(1.08);
+}
 
-        .plan.popular span {
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #6ab04c;
-            color: #fff;
-            padding: 4px 20px;
-            font-size: 18px;
-            border-radius: 5px;
-        }
+.plan.popular span {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6ab04c;
+  color: #fff;
+  padding: 4px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+}
 
-        .plan:hover {
-            box-shadow: 5px 7px 67px -28px rgba(0, 0, 0, 0.37);
-        }
+.plan:hover {
+  box-shadow: 5px 7px 67px -28px rgba(0, 0, 0, 0.37);
+}
 
-        /* Mobile Responsive Styles */
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
+@media (max-width: 768px) {
+  .pricing {
+    flex-direction: column;
+  }
 
-            .pricing {
-                flex-direction: column; /* Stack the plans vertically */
-                align-items: center;
-            }
+  .plan {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
 
-            .plan {
-                max-width: 100%; /* Full width for each plan */
-                margin: 20px 0;
-                padding: 20px;
-                display: block;
-                width: 100%; /* Ensure the plan uses the entire available width */
-                box-sizing: border-box;
-            }
-
-            h1 {
-                font-size: 1.8rem;
-                margin-top: 1rem;
-                text-align: center;
-            }
-
-            p {
-                font-size: 0.95rem;
-                margin-bottom: 2rem;
-                text-align: center;
-            }
-
-            .plan h2 {
-                font-size: 20px;
-            }
-
-            .plan .price {
-                font-size: 24px;
-            }
-
-            .plan ul.features li {
-                font-size: 14px;
-            }
-
-            .plan button {
-                font-size: 14px;
-            }
-        }
-
-        /* Additional Small Screen Tweaks */
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.6rem;
-                margin-top: 0.5rem;
-                visibility: visible; /* Ensure the heading is visible */
-            }
-
-            p {
-                font-size: 0.85rem;
-                margin-bottom: 1.5rem;
-                visibility: visible; /* Ensure the paragraph is visible */
-            }
-
-            .plan {
-                padding: 10px;
-                margin: 15px;
-                min-width: 100%; /* Full width for smaller screens */
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-
-            .plan h2 {
-                font-size: 18px;
-            }
-
-            .plan .price {
-                font-size: 20px;
-            }
-
-            .plan ul.features li {
-                font-size: 12px;
-            }
-
-            .plan button {
-                font-size: 12px;
-                padding: 10px 20px;
-            }
-
-            .pricing {
-              
-                width: 100%; /* Full width to avoid hidden plans */
-            }
-        }
     </style>
 </head>
 
@@ -271,83 +183,159 @@
                 <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
             </li>
             <li>
-                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
             </li>
             <li>
                 <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
             </li>
-        </ul>
-        <h4>BACKGROUND</h4>
-        <ul>
             <li>
-                <a href="#" class="bg" onclick="setBackground('bg1');"><img src="img/styleswitcher/bg1.png" alt="background1"/></a>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
             </li>
             <li>
-                <a href="#" class="bg" onclick="setBackground('bg2');"><img src="img/styleswitcher/bg2.png" alt="background2"/></a>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
             </li>
             <li>
-                <a href="#" class="bg" onclick="setBackground('bg3');"><img src="img/styleswitcher/bg3.png" alt="background3"/></a>
-            </li>
-            <li>
-                <a href="#" class="bg" onclick="setBackground('bg4');"><img src="img/styleswitcher/bg4.png" alt="background4"/></a>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
             </li>
         </ul>
-        <h4>LAYOUT</h4>
-        <ul>
-            <li>
-                <a href="#" class="boxed" onclick="setLayout('boxed');">Boxed</a>
-            </li>
-            <li>
-                <a href="#" class="fullwidth" onclick="setLayout('fullwidth');">Full Width</a>
-            </li>
-        </ul>
+
+        <div id="hideSwitcher">&times;</div>
     </div>
 </div>
-<!-- Live Style Switcher Ends -->
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-gears"></i>
+            <a href="services.html">
+                <h2>Services</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="portfolio.html">
+                <h2>Portfolio</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-envelope-open"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-comments"></i>
+            <a href="blog.html">
+                <h2>Blog</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li class="active"><a href="services.html"><i class="fa fa-gears"></i><span>Services</span></a></li>
+                <li ><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+    <h1>Choose the Best Web Development Plan for Your Needs</h1>
+    <p>
+        Professional web development services tailored to your project. No hidden fees, transparent pricing.
+    </p>
 
-<h1>Pricing Packages</h1>
-<p>Choose a pricing package that suits your needs</p>
+    <div class="pricing">
+        <!-- Basic Plan -->
+        <div class="plan">
+            <h2>Basic</h2>
+            <div class="price">$500</div>
+            <ul class="features">
+                <li><i class="fas fa-check-circle"></i> Up to 5 pages</li>
+                <li><i class="fas fa-check-circle"></i> Responsive design</li>
+                <li><i class="fas fa-check-circle"></i> SEO Optimization</li>
+                <li><i class="fas fa-check-circle"></i> Basic Contact Form</li>
+                <li><i class="fas fa-times-circle"></i> No eCommerce Functionality</li>
+            </ul>
+            <button>Get Started</button>
+        </div>
 
-<div class="pricing">
-    <div class="plan">
-        <h2>Basic Plan</h2>
-        <div class="price">$10/month</div>
-        <ul class="features">
-            <li><i class="fas fa-check-circle"></i>Feature 1</li>
-            <li><i class="fas fa-check-circle"></i>Feature 2</li>
-            <li><i class="fas fa-times-circle"></i>Feature 3</li>
-        </ul>
-        <button>Select Plan</button>
+        <!-- Standard Plan -->
+        <div class="plan popular">
+            <span>Most Popular</span>
+            <h2>Standard</h2>
+            <div class="price">$1000</div>
+            <ul class="features">
+                <li><i class="fas fa-check-circle"></i> Up to 10 pages</li>
+                <li><i class="fas fa-check-circle"></i> Responsive design</li>
+                <li><i class="fas fa-check-circle"></i> SEO Optimization</li>
+                <li><i class="fas fa-check-circle"></i> Custom Blog Integration</li>
+                <li><i class="fas fa-check-circle"></i> Google Analytics Setup</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="plan">
+            <h2>Premium</h2>
+            <div class="price">$2000</div>
+            <ul class="features">
+                <li><i class="fas fa-check-circle"></i> Unlimited pages</li>
+                <li><i class="fas fa-check-circle"></i> Responsive design</li>
+                <li><i class="fas fa-check-circle"></i> eCommerce Functionality</li>
+                <li><i class="fas fa-check-circle"></i> Google Analytics Setup</li>
+                <li><i class="fas fa-check-circle"></i> Ongoing Support (3 months)</li>
+            </ul>
+            <button>Contact Us</button>
+        </div>
     </div>
 
-    <div class="plan popular">
-        <span>Most Popular</span>
-        <h2>Standard Plan</h2>
-        <div class="price">$20/month</div>
-        <ul class="features">
-            <li><i class="fas fa-check-circle"></i>Feature 1</li>
-            <li><i class="fas fa-check-circle"></i>Feature 2</li>
-            <li><i class="fas fa-check-circle"></i>Feature 3</li>
-        </ul>
-        <button>Select Plan</button>
-    </div>
-
-    <div class="plan">
-        <h2>Premium Plan</h2>
-        <div class="price">$30/month</div>
-        <ul class="features">
-            <li><i class="fas fa-check-circle"></i>Feature 1</li>
-            <li><i class="fas fa-check-circle"></i>Feature 2</li>
-            <li><i class="fas fa-check-circle"></i>Feature 3</li>
-        </ul>
-        <button>Select Plan</button>
-    </div>
-</div>
-
-<!-- JavaScript Files -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
+    <!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
+
+
+
