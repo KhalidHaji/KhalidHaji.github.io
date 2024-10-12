@@ -58,21 +58,24 @@
 }
 
 body {
-  background-color: #dff9fb;
+ 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px; /* Add padding to avoid content touching the screen edges */
 }
 
 h1 {
   text-align: center;
   margin-top: 2rem;
+  font-size: 2rem; /* Adjusted for better visibility */
 }
 
 p {
   text-align: center;
   margin-bottom: 4rem;
+  font-size: 1rem; /* Adjusted for better visibility */
 }
 
 .pricing {
@@ -82,7 +85,7 @@ p {
 }
 
 .plan {
-  
+  background-color: #fff;
   padding: 2.5rem;
   margin: 12px;
   border-radius: 5px;
@@ -100,6 +103,7 @@ p {
 }
 
 .plan .price {
+  color: black;
   margin-bottom: 1rem;
   font-size: 30px;
 }
@@ -110,7 +114,7 @@ p {
 }
 
 .plan ul.features li {
- color: black;
+  color: black;
   margin: 8px 0;
 }
 
@@ -163,25 +167,28 @@ p {
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
   .pricing {
     flex-direction: column;
     align-items: center;
   }
 
   .plan {
-    max-width: 90%;
+    max-width: 100%; /* Adjust to fill screen on smaller devices */
     margin: 20px 0;
+    padding: 20px; /* Reduce padding for smaller devices */
   }
-}
 
-@media (max-width: 480px) {
   h1 {
-    font-size: 24px;
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
     margin-top: 1rem;
   }
 
   p {
-    font-size: 14px;
+    font-size: 0.95rem; /* Reduce paragraph font size */
     margin-bottom: 2rem;
   }
 
@@ -190,7 +197,7 @@ p {
   }
 
   .plan .price {
-    font-size: 24px;
+    font-size: 24px; /* Adjust price font size */
   }
 
   .plan ul.features li {
@@ -201,6 +208,36 @@ p {
     font-size: 14px;
   }
 }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem; /* Further reduce for very small screens */
+    margin-top: 0.5rem;
+  }
+
+  p {
+    font-size: 0.85rem; /* Further reduce paragraph size */
+    margin-bottom: 1.5rem;
+  }
+
+  .plan h2 {
+    font-size: 18px;
+  }
+
+  .plan .price {
+    font-size: 22px;
+  }
+
+  .plan ul.features li {
+    font-size: 12px;
+  }
+
+  .plan button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
+
 
     </style>
 </head>
