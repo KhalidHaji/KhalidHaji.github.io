@@ -209,15 +209,68 @@ p {
   }
 }
 
-@media (max-width: 480px) {
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan {
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+  }
+
   h1 {
-    font-size: 1.6rem; /* Further reduce for very small screens */
-    margin-top: 0.5rem;
+    font-size: 1.8rem;
+    margin-top: 1rem;
   }
 
   p {
-    font-size: 0.85rem; /* Further reduce paragraph size */
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .plan h2 {
+    font-size: 20px;
+  }
+
+  .plan .price {
+    font-size: 24px;
+  }
+
+  .plan ul.features li {
+    font-size: 14px;
+  }
+
+  .plan button {
+    font-size: 14px;
+  }
+}
+
+/* Additional Small Screen Tweaks */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    visibility: visible; /* Ensure the heading is visible */
+  }
+
+  p {
+    font-size: 0.85rem;
     margin-bottom: 1.5rem;
+    visibility: visible; /* Ensure the paragraph is visible */
+  }
+
+  .plan {
+    padding: 15px;
+    margin: 15px;
+    min-width: 280px; /* Adjust to make sure plans fit properly */
   }
 
   .plan h2 {
@@ -225,7 +278,7 @@ p {
   }
 
   .plan .price {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .plan ul.features li {
@@ -236,7 +289,12 @@ p {
     font-size: 12px;
     padding: 10px 20px;
   }
+
+  .pricing {
+    overflow-x: hidden; /* Prevent horizontal scrolling on small screens */
+  }
 }
+
 
 
     </style>
